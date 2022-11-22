@@ -1,8 +1,8 @@
 $('.about_slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
-    dots: false,
+    arrows: true,
+    dots: true,
     responsive: [
         {
             breakpoint: 768,

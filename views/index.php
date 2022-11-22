@@ -1,7 +1,7 @@
 <div class="wrap">
 	<h1 class="wp-heading-inline"><?= WATER_CERTIFICATES_PLUGIN_NAME_RU ?></h1>
 
-	<a href="<?= WATER_CERTIFICATES_ADMIN_URL . '&view=add' ?>" class="page-title-action">Добавить</a>
+	<a href="<?= WATER_CERTIFICATES_PLUGIN_ADMIN_URL . '&view=add' ?>" class="page-title-action">Добавить</a>
 
 	<hr class="wp-header-end">
 
