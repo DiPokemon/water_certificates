@@ -43,4 +43,11 @@ register_activation_hook(__FILE__, array($water_main_class, 'activate'));
 add_action( 'wp_enqueue_scripts', 'water_certificates_script' );
 function water_certificates_script(){
 	wp_enqueue_script( 'water_certificates_slider-init', '/wp-content/plugins/water_certificates/static/js/certificates-slider.js', array('slick'), null, true);
+	wp_enqueue_script( 'glightbox', '/wp-content/plugins/water_certificates/static/js/glightbox.js',array(), null, true);
 }
+
+add_action('wp_enqueue_scripts', 'water_certificates_style', 10);
+function water_certificates_style()
+{
+  wp_enqueue_style('glightbox', '/wp-content/plugins/water_certificates/static/css/glightbox.css');
+}; 
